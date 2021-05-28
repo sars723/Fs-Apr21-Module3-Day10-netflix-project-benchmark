@@ -362,7 +362,7 @@
       const handleSubmit = async (event) => {
         event.preventDefault();
 
-        //loading true
+        isLoading(true);
 
         /*    let category = []; */
 
@@ -386,8 +386,16 @@
         } catch (err) {
           alert(err.message);
         }
+        isLoading(false);
       };
-
+      const isLoading = (loading) => {
+        // toggles the submit button loader on/off
+        if (loading) {
+          document.getElementById("spinner").classList.remove("d-none");
+        } else {
+          document.getElementById("spinner").classList.add("d-none");
+        }
+      };
       //delete
       const handleDelete = async () => {
         try {
