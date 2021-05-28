@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./profile-styles.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <header style="position: relative; height: 20vh">
+      <a href="./day5-dashboard.html">
+        <img
+          src="./images/logo.png"
+          alt="logo"
+          style="width: 8vw; height: 2.5vw; padding-top: 1vh; padding-left: 1vw"
+          class="fluid"
+        />
+      </a>
+    </header>
+    <div class="container d-flex flex-column" style="width: 50vw">
+      <h1 class="text-white">Edit profile</h1>
+      <div
+        id="divider"
+        style="width: 100%; height: 2px; background-color: #333333"
+        class="mb-4"
+      ></div>
+      <div id="center-content" class="d-flex flex-row">
+        <div class="strive-logo-left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-pencil-fill icon-edit"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"
+            />
+          </svg>
+          <img
+            style="width: 100px; height: 100px"
+            src="https://strive.school/assets/strive_logo02.png"
+            alt="strive-logo"
+          />
+        </div>
+        <div
+          id="right-section"
+          class="ml-4 d-flex flex-column"
+          style="width: 80%"
+        >
+          <input
+            type="text"
+            placeholder="Username"
+            style="background-color: grey; color: white; font-weight: bold"
+          />
+          <label
+            style="font-weight: bold; color: white; font-size: 1.3rem"
+            class="mt-2"
+            >Language:
+          </label>
+          <!-- dropdown -->
+          <div
+            class="btn-group align-self-start"
+            style="background-color: black; border: 1px white solid"
+          >
+            <button
+              type="button"
+              class="btn dropdown-toggle"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              style="color: white; font-weight: bold"
+            >
+              English US
+            </button>
+            <div
+              class="dropdown-menu"
+              style="background-color: black; border: 1px white solid"
+            >
+              <a class="dropdown-item" href="#">English UK</a>
+              <a class="dropdown-item" href="#">English AU</a>
+              <a class="dropdown-item" href="#">English Simplified</a>
+            </div>
+          </div>
+          <div
+            id="divider"
+            style="width: 100%; height: 2px; background-color: #333333"
+            class="my-4"
+          ></div>
+          <label
+            style="font-weight: bold; color: white; font-size: 1.3rem"
+            class="mt-2"
+            >Maturity Settings:
+          </label>
+          <a
+            href="https://help.netflix.com/de/node/2064"
+            target="_blank"
+            type="button"
+            class="btn"
+            style="width: 40%; background: #666666"
+          >
+            <span style="color: white; font-weight: bold">
+              ALL MATURITY RATINGS
+            </span>
+          </a>
+          <p class="pt-2" style="color: white">
+            Show titles of all maturity ratings for this profile
+          </p>
+          <button
+            class="btn"
+            style="border: 1px solid grey; width: 20%; border-radius: 0"
+          >
+            <span style="color: grey">EDIT</span>
+          </button>
+          <div
+            id="divider"
+            style="width: 100%; height: 2px; background-color: #333333"
+            class="my-4"
+          ></div>
+          <p style="color: white; font-weight: bold">Autoplay controls</p>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend d-flex flex-column">
+              <div>
+                <input
+                  type="checkbox"
+                  aria-label="Checkbox for following text input"
+                />
+                <p>Autoplay next episode in a series on all devices.</p>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  aria-label="Checkbox for following text input"
+                />
+                <p>Autoplay previews while browsing on all devices.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="divider"
+        style="width: 100%; height: 2px; background-color: #333333"
+        class="mb-4"
+      ></div>
+      <div class="d-flex pb-5" id="buttons">
+        <button
+          type="button"
+          class="btn"
+          style="color: black; background-color: white"
+        >
+          SAVE
+        </button>
+        <button
+          type="button"
+          class="btn"
+          style="border: 1px grey solid; color: grey"
+        >
+          CANCEL
+        </button>
+        <button
+          type="button"
+          class="btn"
+          style="border: 1px grey solid; color: grey"
+        >
+          DELETE
+        </button>
+      </div>
+    </div>
+
+    <!-- my js -->
+    <script src="./profile.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+body {
+  background: #141414;
+}
+hr {
+  background-color: #333333;
+}
+a.dropdown-item {
+  color: white;
+}
+.input-group-prepend div {
+  display: flex;
+}
+.input-group-prepend div p {
+  color: white;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+.input-group-prepend div input {
+  width: 2rem;
+  height: 2rem;
+}
+#buttons button {
+  margin-right: 1rem;
+  border-radius: 0;
+}
+.icon-edit {
+  position: relative;
+  top: 15%;
+  left: 50%;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 3px;
+  box-sizing: content-box;
+}
