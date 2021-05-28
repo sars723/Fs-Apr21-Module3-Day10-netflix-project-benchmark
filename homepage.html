@@ -83,6 +83,10 @@
     .carousel-control-next {
       width: max-content;
     }
+    .badge {
+      top: 0;
+      left: 0;
+    }
   </style>
   <nav class="navbar navbar-expand-lg navBar navbar-dark">
     <a class="navbar-brand" href="./day5-dashboard.html">
@@ -575,10 +579,10 @@
                class="card-img-top"
                alt="${movie.name}"
              />
-             <div class="card-body text-center" data-id=${movie._id}>
+             <div class="card-body text-center position-relative" data-id=${movie._id}>
                <h5 class="card-title">${movie.name}</h5>
                <p class="card-text">${movie.description}</p>
-
+               <h5> <span class="badge badge-danger position-absolute">${movie.category}</span></h5>
                <div class="d-flex justify-content-between">
                <a href="./backoffice.html?id=${movie._id}"" id="edit-movie" class="btn btn-sm btn-secondary">Edit</a>
                <a href="./detail.html?id=${movie._id}" id="view-detail-product" class="btn btn-sm btn-link">View Details</a>
@@ -607,10 +611,10 @@
                class="card-img-top"
                alt="${movie.name}"
              />
-             <div class="card-body text-center" data-id=${movie._id}>
+             <div class="card-body text-center position-relative" data-id=${movie._id}>
                <h5 class="card-title">${movie.name}</h5>
                <p class="card-text">${movie.description}</p>
-
+               <h5> <span class="badge badge-danger position-absolute">${movie.category}</span></h5>
                <div class="d-flex justify-content-between">
                <a href="./backoffice.html?id=${movie._id}"" id="edit-movie" class="btn btn-sm btn-secondary">Edit</a>
                <a href="./detail.html?id=${movie._id}" id="view-detail-product" class="btn btn-sm btn-link">View Details</a>
@@ -640,9 +644,10 @@
                class="card-img-top"
                alt="${movie.name}"
              />
-             <div class="card-body text-center" data-id=${movie._id}>
+             <div class="card-body text-center position-relative" data-id=${movie._id}>
                <h5 class="card-title">${movie.name}</h5>
                <p class="card-text">${movie.description}</p>
+               <h5> <span class="badge badge-danger position-absolute">${movie.category}</span></h5>
 
                <div class="d-flex justify-content-between">
                <a href="./backoffice.html?id=${movie._id}"" id="edit-movie" class="btn btn-sm btn-secondary">Edit</a>
